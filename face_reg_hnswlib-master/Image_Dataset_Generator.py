@@ -7,8 +7,7 @@ from imutils.face_utils import FaceAligner
 from constant import IMAGE_SIZE, MAX_NUMBER_OF_IMAGES
 
 detector = dlib.get_frontal_face_detector()
-shape_predictor = dlib.shape_predictor(
-	'/Users/DEVN/Downloads/face_reg_hnswlib-master/face_reg_hnswlib-master/shape_predictor_68_face_landmarks.dat')
+shape_predictor = dlib.shape_predictor('/Users/DEVN/Downloads/Face_Recognition_2/face_reg_hnswlib-master/shape_predictor_68_face_landmarks.dat')
 face_aligner = FaceAligner(shape_predictor, desiredFaceWidth=IMAGE_SIZE)
 video_capture = cv2.VideoCapture(0)
 name = input("Enter name of person:")

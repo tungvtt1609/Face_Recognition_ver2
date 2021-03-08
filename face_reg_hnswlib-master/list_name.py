@@ -64,6 +64,7 @@ while True:
     #Test
     names =  append_names(frame)
     print(names)
+    # time.sleep(60)
 
 
 
